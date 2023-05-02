@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/394f888b0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Kcal Calculator</title>
+</head>
+<body>
+    <div class="background">
+        <div class="calculator-box">
+            <div class="gender-box variable-box">
+                <p>Gender <i class="fa-solid fa-venus-mars"></i></p>
+                <select name="gender" id="select-gender">
+                    <option selected>-choose sex-</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                </select>
+            </div>
+            <div class="height-box variable-box">
+                <p>Height <i class="fa-solid fa-arrows-up-down"></i></p>
+                <input class="height-input" type="number" placeholder="height in cm">
+                <button class="clear-height clear">Clear</button>
+            </div>
+            <div class="weight-box variable-box">
+                <p>Weight <i class="fa-solid fa-weight-scale"></i></p>
+                <input type="number" class="weight-input" placeholder="weight in kg">
+                <button class="clear-weight clear">Clear</button>
+            </div>
+            <div class="age-box variable-box">
+                <p>Age <i class="fa-solid fa-hourglass-end"></i></p>
+                <input type="number" class="age-input">
+                <button class="clear-age clear">Clear</button>
+            </div>
+            <div class="activity-level-box variable-box">
+                <p>Physical activity level <i class="fa-solid fa-person-walking"></i></p>
+                <select id="select-activity-level">
+                    <option selected>-choose physical activity level-</option>
+                    <option>none or low</option>
+                    <option>medium</option>
+                    <option>high</option>
+                </select>
+            </div>
+            <p class="result-text">Check your daily caloric requirements</p>
+            <div class="kcal-result-box">
+                <p class="result">Click here</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./jsCalculator.js"></script>
+</body>
+</html>
