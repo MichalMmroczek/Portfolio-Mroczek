@@ -1,0 +1,1 @@
+This is my project of daily caloric requirements calculator based on the Harris-Benedict formula.
